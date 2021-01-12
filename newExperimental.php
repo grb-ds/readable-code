@@ -2,8 +2,7 @@
 
 // fw = for who
 //TODO: change the name
-function orderPizza($pizzaType, $username)
-{
+function orderPizza($pizzaType, $username) {
     echo 'Creating new order... <br>';
     $toPrint = 'A ';
     $toPrint .= $pizzaType; //TODO
@@ -33,26 +32,21 @@ function test($pizzaType) {
     echo "Test: type is {$pizzaType}. <br>";
 }
 
-function calculateCosts($pizzaType)
-{
+function calculateCosts($pizzaType) {
     switch ($pizzaType) {
-        case 'marguerita':
-        {
+        case 'marguerita': {
             $cost = 5;
             break;
         }
-        case 'golden':
-        {
+        case 'golden': {
             $cost = 100;
             break;
         }
-        case 'calzone':
-        {
+        case 'calzone': {
             $cost = 10;
             break;
         }
-        case 'hawai':
-        {
+        case 'hawai': {
             throw new Exception('Computer says no');
             break;
         }
@@ -60,10 +54,8 @@ function calculateCosts($pizzaType)
             $cost = 'unknown';
     }
     return $cost;
-
 }
-function orderPizzaAll()
-{
+function orderPizzaAll() {
     $test = 0;
     orderPizza('calzone', 'koen');
     orderPizza('marguerita', 'manuele');
@@ -71,8 +63,7 @@ function orderPizzaAll()
     //TODO
 }
 
-function makeAllHappy()
-{
+function makeAllHappy() {
     orderPizzaAll();
 }
 
