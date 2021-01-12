@@ -1,7 +1,6 @@
 <?php
 
 // fw = for who
-//TODO: change the name
 function ordr_pz($pizzatype, $fw) {
 
     $type = $pizzatype;
@@ -39,7 +38,6 @@ function test($p_type) {
     echo "Test: type is {$p_type}. <br>";
 }
 
-//TODO: use switch
 function calc_cts($p_type)
 {
     $cst = 'unknown';
